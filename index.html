@@ -15,24 +15,50 @@ body {
   color: #111111;
 }
 /* CYB33 Navigation */
+/* CYB33 Header Logo */
+
 .header-brand {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
   color: #111111;
   text-decoration: none;
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: -1px;
-  white-space: nowrap;
 }
 
-.header-brand span {
+.header-logo {
+  position: relative;
+  display: inline-block;
+  border: 1.5px solid #111111;
+  padding: 7px 14px;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.header-logo > span:first-child {
   color: #800020;
 }
 
-.header-brand .brand-plus {
-  font-size: 13px;
-  vertical-align: top;
-  margin-left: 3px;
+.header-plus {
+  position: absolute;
+  right: -7px;
+  bottom: -7px;
+  background: #800020;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 5px;
+  letter-spacing: 0;
+}
+
+.header-subtitle {
+  margin-top: 12px;
+  font-size: 7px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  white-space: nowrap;
 }
 .site-header {
   display: flex;
@@ -120,9 +146,13 @@ body {
 <body>
   
 <header class="site-header">
-  <a href="#home" class="header-brand" aria-label="CYB33 Home">
-    CYB<span>33</span><span class="brand-plus">+</span>
-  </a>
+<a href="#home" class="header-brand" aria-label="CYB33 Home">
+  <span class="header-logo">
+    CYB<span>33</span>
+    <span class="header-plus">+</span>
+  </span>
+  <span class="header-subtitle">DIGITAL SOLUTIONS</span>
+</a>
 
   <nav class="navigation" aria-label="Main navigation">
     <a href="#home">Home</a>
