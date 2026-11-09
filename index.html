@@ -89,6 +89,30 @@ body {
   line-height: 1.8;
   margin: 0;
 }
+/* Hero Call-to-Action Button */
+
+.hero-button {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 16px 28px;
+  background: #800020;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.hero-button:hover {
+  background: #a00030;
+  transform: translateY(-2px);
+}
+
+.hero-button:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+}
 .header-subtitle {
   margin-top: 12px;
   font-size: 7px;
@@ -215,6 +239,8 @@ body {
     Practical digital solutions delivered with clear communication,
     flexibility and minimal disruption to your working day.
   </p>
+      
+<a href="#services" class="hero-button">Explore Our Services →</a>
 </section>
   </main>
 </body>
