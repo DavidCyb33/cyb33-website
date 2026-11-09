@@ -201,6 +201,85 @@ body {
       margin-top: 40px;
       color: #555555;
     }
+/* CYB33 Services Section */
+
+.services {
+  padding: 90px 8%;
+  background: #ffffff;
+}
+
+.services-intro {
+  max-width: 720px;
+  margin-bottom: 45px;
+}
+
+.section-label {
+  color: #800020;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 0 0 18px;
+}
+
+.services-intro h2 {
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  margin: 0 0 20px;
+}
+
+.services-intro > p:last-child {
+  color: #555555;
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.service-card {
+  background: #f7f7f8;
+  border: 1px solid #e9e9ec;
+  border-top: 3px solid #800020;
+  border-radius: 6px;
+  padding: 32px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+.service-card h3 {
+  font-size: 21px;
+  margin: 0 0 14px;
+}
+
+.service-card p {
+  color: #555555;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .services {
+    padding: 60px 6%;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 26px;
+  }
+}
   </style>
 </head>
 <body>
@@ -241,6 +320,39 @@ body {
   </p>
       
 <a href="#services" class="hero-button">Explore Our Services →</a>
+</section>
+<section class="services" id="services">
+  <div class="services-intro">
+    <p class="section-label">WHAT WE DO</p>
+    <h2>Digital solutions built around your business.</h2>
+    <p>
+      From improving your online presence to simplifying everyday
+      processes, CYB33 provides practical digital support that
+      helps businesses work smarter.
+    </p>
+  </div>
+
+  <div class="services-grid">
+    <article class="service-card">
+      <h3>Websites &amp; Digital Presence</h3>
+      <p>Website reviews, improvements, SEO fundamentals and a stronger online presence.</p>
+    </article>
+
+    <article class="service-card">
+      <h3>Systems &amp; Automation</h3>
+      <p>Smarter workflows, reduced administration and practical process improvements.</p>
+    </article>
+
+    <article class="service-card">
+      <h3>Data &amp; Reporting</h3>
+      <p>Clear dashboards, spreadsheets and reporting tools that make business information useful.</p>
+    </article>
+
+    <article class="service-card">
+      <h3>Digital Support &amp; Consultancy</h3>
+      <p>Flexible guidance, troubleshooting and ongoing support for your digital tools.</p>
+    </article>
+  </div>
 </section>
   </main>
 </body>
