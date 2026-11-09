@@ -15,8 +15,29 @@ body {
   color: #111111;
 }
 /* CYB33 Navigation */
+.header-brand {
+  position: relative;
+  color: #111111;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  white-space: nowrap;
+}
 
+.header-brand span {
+  color: #800020;
+}
+
+.header-brand .brand-plus {
+  font-size: 13px;
+  vertical-align: top;
+  margin-left: 3px;
+}
 .site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #ffffff;
   border-bottom: 1px solid #eeeeee;
   padding: 24px 5%;
@@ -97,25 +118,7 @@ body {
   </style>
 </head>
 <body>
-  .header-brand {
-  position: relative;
-  color: #111111;
-  text-decoration: none;
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: -1px;
-  white-space: nowrap;
-}
-
-.header-brand span {
-  color: #800020;
-}
-
-.header-brand .brand-plus {
-  font-size: 13px;
-  vertical-align: top;
-  margin-left: 3px;
-}
+  
 <header class="site-header">
   <a href="#home" class="header-brand" aria-label="CYB33 Home">
     CYB<span>33</span><span class="brand-plus">+</span>
@@ -126,9 +129,6 @@ body {
     <a href="#services">Services</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
-    display: flex;
-justify-content: space-between;
-align-items: center;
   </nav>
 </header>
   <main>
